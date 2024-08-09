@@ -39,15 +39,15 @@ Os dados utilizados são provenientes do diretório `./src/Data`, onde o arquivo
 ## Componentes
 
 Os componentes estão no diretório `./src/Components`, onde cada componente possui seu próprio diretório, e eles possuem as seguintes características:
--Navbar:
+- Navbar:
     - Descrição: este componente utiliza props com map, para que no App seja criado uma lista de objetos, com o link e o titulo. Esta sendo uma barra de navegação com as páginas disponíveis no projeto.
--About:
+- About:
     - Descrição: este componente renderiza uma mensagem de boas vindas.
--CarDetail:
+- CarDetail:
     - Descrição: este componente faz o detalhamento, trazendo o contexto do `carsData` para o render e manipula as lógicas para adição e subtração de objetos.
--CarForm:
+- CarForm:
     - Descrição: este componente renderiza os inputs, bem como os botões de "salvar", se estiver no handle de edição, o botão de "adicionar", se estiver no handle de adição, e o botão cancelar.
--CarsList:
+- CarsList:
     - Descrição: este componente faz a renderização, listando os carros presentes no `carsData` e de novos objetos adicionados pelo `CarForm`.
--About:
+- About:
     - Descrição: este componente renderiza uma descrição sobre o projeto.
