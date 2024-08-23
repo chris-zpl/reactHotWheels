@@ -12,7 +12,7 @@ cd hotwheelscars
 npm install
 ```
 
-3. E em seguida, npm start, para iniciar a execução do projeto.
+3. E, em seguida, npm start, para iniciar a execução do projeto.
 
 ```
 npm start
