@@ -28,7 +28,8 @@ function CarForm() {
     if (id) {
       updateCarro(editedCarro.id, editedCarro);
     } else {
-      const novoId = carros.length > 0 ? Math.max(...carros.map((c) => c.id)) + 1 : 1;
+      const novoId =
+        carros.length > 0 ? Math.max(...carros.map((c) => c.id)) + 1 : 1;
       addCarro({ ...editedCarro, id: novoId });
     }
     navigate("/cars");

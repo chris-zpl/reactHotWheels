@@ -11,6 +11,9 @@ export function CarDetail({ children }) {
   const [carros, setCarros] = useState(carsData);
 
   function addCarro(carro) {
+    if (carro.nome === "" || carro.modelo || carro.cor === "" || carro.ano === ""){
+      return; 
+    }
     setCarros([...carros, carro]);
   }
 
