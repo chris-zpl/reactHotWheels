@@ -1,4 +1,4 @@
-## Projeto CRUD Hot Wheels - FASE 1
+## Projeto CRUD Hot Wheels - FASE 2
 Para executar este projeto:
 
 1. Entre pasta context-react-project no terminal:
