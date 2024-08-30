@@ -6,7 +6,7 @@ Para executar este projeto:
 cd hotwheelscars
 ```
 
-2. Rode npm install para instalar as dependências do projeto, como Bootstrap, Font Awesome e React Router:
+2. Rode npm install para instalar as dependências do projeto, como MUI, axios e React Router:
 
 ```
 npm install
@@ -21,7 +21,7 @@ Após execução do projeto, este é o resultado esperado no navegador:
 ![Gif mostrando o resultado esperado ao rodar este projeto](./resultado.gif)
 
 ## Dados
-Os dados utilizados são provenientes do diretório `./src/Data`, onde o arquivo `carsData` contêm os objetos estáticos para listagem.
+Os dados utilizados são provenientes da API `hotwheels-api`, onde contêm os objetos estáticos para listagem.
 
 ## Componentes
 
@@ -31,10 +31,14 @@ Os componentes estão no diretório `./src/Components`, onde cada componente pos
 - Home:
     - Descrição: este componente renderiza uma mensagem de boas vindas.
 - CarDetail:
-    - Descrição: este componente faz o detalhamento, trazendo o contexto do `carsData` para o render e manipula as lógicas para adição e subtração de objetos.
+    - Descrição: este componente faz o detalhamento, trazendo o contexto da API para o render e manipula as lógicas para adição e subtração de objetos.
 - CarForm:
     - Descrição: este componente renderiza os inputs, bem como os botões de "salvar", se estiver no handle de edição, o botão de "adicionar", se estiver no handle de adição, e o botão cancelar.
 - CarsList:
-    - Descrição: este componente faz a renderização, listando os carros presentes no `carsData` e de novos objetos adicionados pelo `CarForm`.
+    - Descrição: este componente faz a renderização, listando os carros presentes na API e de novos objetos adicionados pelo `CarForm`.
 - About:
     - Descrição: este componente renderiza uma descrição sobre o projeto.
+
+## Hooks
+
+O arquivo `useApi`, encontra-se no diretório `./src/Hooks` e faz a lógica de uso da API, junto com axios, para ser exportada e usada no `CarDetail`.

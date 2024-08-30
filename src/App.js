@@ -10,17 +10,10 @@ import CarsList from "./Components/CarsList/CarsList";
 import CarEdit from "./Components/CarForm/CarForm";
 
 function App() {
-  const navlinks = [
-    { links: "/", titulo: "Home" },
-    { links: "/cars", titulo: "Carros" },
-    { links: "/add", titulo: "Adicionar Carro" },
-    { links: "/about", titulo: "Sobre" },
-  ];
-
   return (
     <div className="container main">
       <BrowserRouter>
-        <NavBar topicos={navlinks} />
+        <NavBar/>
         <Routes>
           <Route path="/" index element={<Home />} />
           <Route path="/about" element={<About />} />
